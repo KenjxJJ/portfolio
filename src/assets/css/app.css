@@ -17,10 +17,14 @@
 }
 
 /* Links */
-a,
+a {
+  color: rgb(255, 255, 255);
+}
 a:focus,
 a:hover {
-  color: #fff;
+  color: #d2d9d4 !important;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
 }
 
 /* Custom default button */
@@ -39,7 +43,7 @@ a:hover {
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   background-color: #333;
 }
 
@@ -52,7 +56,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  margin: 0 auto;
 }
 
 /*
@@ -119,10 +123,53 @@ body {
 * Main
 */
 
-img{
-   width: 45%;
-   display: block;
-   border: 1px solid rgb(195, 195, 197);
-   /* border-radius: 44%; */
-   margin: 2.4rem auto;
+img {
+  width: 45%;
+  display: block;
+  border: 1px solid rgb(195, 195, 197);
+  margin: 2.4rem auto;
+}
+
+/* 
+* Projects Page
+ */
+
+.project_list {
+  margin: 2rem 0.1rem 1.3rem;
+}
+
+.project {
+  background: linear-gradient(
+    -135deg,
+    rgb(88, 88, 88) 0%,
+    rgb(29, 29, 29) 100%
+  );
+  padding: 0 0 2rem 0;
+  margin: 1.4rem 0;
+  z-index: 5;
+}
+.projectImage img {
+  width: 100%;
+  border: none;
+  margin: 0;
+}
+
+.projectLink:focus,
+.projectLink:hover {
+  border-bottom: 2px solid #d2d9d4;
+  transition: border-bottom 0.1s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 765px) {
+  .project_list {
+    flex-flow: wrap;
+  }
+  .project {
+    width: 350px;
+  }
+
+  .projectImage * {
+    height: 350px;
+  }
 }

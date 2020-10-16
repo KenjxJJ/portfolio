@@ -8,6 +8,7 @@ const Footer = () => {
           Developed by <span>Joel</span>. Check the{" "}
           <a href="https://github.com/KenjxJJ/"> GitHub Repo</a>
         </p>
+        <p>Copyright &copy; 2020</p>
       </div>
     </footer>
   );

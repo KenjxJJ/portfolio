@@ -21,10 +21,10 @@ function App() {
               <Home/>
             </Route>
             <Route path="/projects">
-              <ProjectsPage />
+              <ProjectsPage/>
             </Route>
             <Route path="/contactme">
-              <ContactMePage />
+              <ContactMePage tel={'+(256) 771 968370'} email={'joelkiggwe94@gmail.com'} address={'Ntawo Mukono, Uganda'}/>
             </Route>
             <Route path="*">
               <Error404Page/>

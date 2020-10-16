@@ -1,5 +1,6 @@
 import React from 'react';
-import JoelImg from './../assets/img/jj.jpg';
+import JoelImg from './../assets/img/joel.jpg';
+import {Link}  from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -12,9 +13,9 @@ const Home = () => {
         and click the next button.{" "}
       </p>
       <p className="lead">
-        <a href="#" className="btn btn-lg btn-secondary">
+        <Link to="#" className="btn btn-lg btn-secondary">
           Hire Me Now!
-        </a>
+        </Link>
       </p>
     </main>
   );
