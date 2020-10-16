@@ -67,7 +67,7 @@ body {
 }
 
 .masthead-brand {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .nav-masthead .nav-link {
@@ -172,4 +172,20 @@ img {
   .projectImage * {
     height: 350px;
   }
+}
+
+/* 
+* ContactMe Page
+ */
+.contactMeBackground {
+  width: 100vw;
+  display: block;
+}
+.smartblue {
+  color: #d2d9d4;
+}
+.content{
+  max-width: 995px;
+  margin: auto;
+   
 }

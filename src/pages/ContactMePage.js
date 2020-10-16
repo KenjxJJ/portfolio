@@ -2,17 +2,21 @@ import React from "react";
 
 const ContactMePage = (props) => {
   return (
-    <main>
-      <p>Have interest in my work? get in touch me via </p>
-      <p><span>
+    <div className="mt-5 mb-5 pt-2 contactMeBackground">
+    <main className="content">
+      <h2 className="mb-4 p-4">Have interest in my work? Get in touch with me via </h2>
+      <div className="text-center text-md-left ml-md-4">
+      <p><span className="smartblue font-weight-bold text-uppercase">
           Email
           </span> : {props.email}</p>
-      <p><span>
+      <p><span className="smartblue font-weight-bold text-uppercase">
           Telephone
           </span> : {props.tel}</p>
-      <p><span>Address
-          </span>: {props.address}</p>
+      <p><span className="smartblue font-weight-bold text-uppercase">Address
+          </span> : {props.address}</p>
+          </div>
     </main>
+    </div>
   );
 };
 
