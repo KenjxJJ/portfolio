@@ -8,27 +8,27 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ContactMePage from "./pages/ContactMePage";
 import ProjectsPage from "./pages/ProjectsPage";
-import Error404Page from "./pages/Error404Page";
-
 function App() {
   return (
     <>
       <div className="cover-container d-flex w-100 h-100  flex-column">
         <Router>
-        <Navigation />
+          <Navigation />
           <Switch>
             <Route path="/" exact>
-              <Home/>
+              <Home />
             </Route>
-            <Route path="/projects">
-              <ProjectsPage/>
+            <Route exact path="/projects">
+              <ProjectsPage />
             </Route>
-            <Route path="/contactme">
-              <ContactMePage tel={'+(256) 771 968370'} email={'joelkiggwe94@gmail.com'} address={'Ntawo Mukono, Uganda'}/>
+            <Route exact path="/contactme">
+              <ContactMePage
+                tel={"+(256) 771 968370"}
+                email={"joelkiggwe94@gmail.com"}
+                address={"Ntawo Mukono, Uganda"}
+              />
             </Route>
-            <Route path="*">
-              <Error404Page/>
-            </Route>
+            
           </Switch>
         </Router>
         <Footer />
