@@ -36,14 +36,19 @@ class ProjectsPage extends Component {
     ));
     return (
       <>
-        <main className="mt-5 pt-2">
-          <h2 style={{color: '#d2d9d4' }}className="text-md-left pl-md-3">Projects' Overview:</h2>
-          <p className="mt-3 text-md-left pl-md-3">
+        <div className="smartdisplay">
+        <main className="content mt-2 pt-2">
+          <h2 style={{color: '#d2d9d4' }}
+          className="text-md-left pl-md-5">Projects' Overview:</h2>
+          <p className="mt-3 text-md-left pl-md-5">
             Check out some of the projects I have made.
           </p>
-          <div className="project_list d-md-flex flex-md-row justify-content-md-start
+          <div className="project_list d-md-flex 
+          flex-md-row justify-content-md-start
+          
           ">{result}</div>
         </main>
+        </div>
       </>
     );
   }
@@ -52,11 +57,11 @@ class ProjectsPage extends Component {
 const Project = ({ project }) => {
   const { image, description, liveLink, gitLink } = project;
   return (
-    <div className="project ml-md-3 mw-100">
+    <div className="project ml-md-3">
       <div className="projectImage">
-        <img className="img-fluid"src={image} alt="" />
+        <img className="img-fluid" src={image} alt="" />
       </div>
-      <p className="p-3">{description}</p>
+      <p className="p-3" style={{borderTop: '5px solid #d2d9d4'}}>{description}</p>
       <div className="">
         <FontAwesomeIcon style={{ color: "#d2d9d4" }} icon={faLaptop} />
         <Link

@@ -57,12 +57,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .cover-container {
-  margin:  0;
-
+  margin: 0;
 }
 
 /*
@@ -130,7 +129,7 @@ body {
 */
 
 img {
-  max-width:200px;
+  max-width: 200px;
   display: block;
   border: 1px solid rgb(195, 195, 197);
   margin: auto;
@@ -141,7 +140,7 @@ img {
  */
 
 .project_list {
-  margin: 2rem 0.1rem 1.3rem;
+  padding: 0.4rem 3rem;
 }
 
 .project {
@@ -167,9 +166,8 @@ img {
   cursor: pointer;
 }
 
-@media (min-width: 765px) {
-    
 
+@media (min-width: 765px) {
   .project_list {
     flex-flow: wrap;
   }
@@ -178,25 +176,27 @@ img {
   }
 
   .projectImage * {
-    height: 350px;
+    height: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .project {
+    flex: 1 1 30%;
   }
 }
 
 /* 
 * ContactMe Page
  */
-.contactMeBackground,
-.homeBackground {
-  width: 100vw;
-  display: block;
-}
 .smartblue {
   color: #d2d9d4;
 }
-.content{
+.content {
   max-width: 995px;
   margin: auto;
-   
 }
 
-
+.smartdisplay {
+  width: 100vw;
+  display: block;
+}
