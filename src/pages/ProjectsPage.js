@@ -64,24 +64,23 @@ const Project = ({ project }) => {
       <p className="p-3" style={{borderTop: '5px solid #d2d9d4'}}>{description}</p>
       <div className="">
         <FontAwesomeIcon style={{ color: "#d2d9d4" }} icon={faLaptop} />
-        <Link
+        <a
           style={{ color: "#d2d9d4" }}
           className="projectLink m-2 font-weight-bold text-uppercase"
-          to={{ pathname: liveLink }}
-          target="_blank"
-        >
+          href={liveLink}
+          >
           Live Site
-        </Link>
+        </a>
         <span className="m-4"></span>
         <FontAwesomeIcon style={{ color: "#739ba0" }} icon={faGithubAlt} />
-        <Link
+        <a
           style={{ color: "#739ba0" }}
           className="projectLink m-2 font-weight-bold text-uppercase"
-          to={{ pathname: gitLink }}
-          target="_blank"
+          href={gitLink }
+          
         >
           GitHub
-        </Link>
+        </a>
       </div>
     </div>
   );
