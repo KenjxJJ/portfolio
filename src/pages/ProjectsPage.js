@@ -57,7 +57,7 @@ class ProjectsPage extends Component {
 const Project = ({ project }) => {
   const { image, description, liveLink, gitLink } = project;
   return (
-    <div className="project ml-md-3">
+    <div className="project ml-md-3 fadeIn">
       <div className="projectImage">
         <img className="img-fluid" src={image} alt="" />
       </div>

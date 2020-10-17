@@ -73,6 +73,8 @@ body {
 
 .masthead-brand {
   margin-bottom: 0.5rem;
+  transform:  translateX(-100%);
+  -webkit-transform: translateX(-100%);
 }
 
 .nav-masthead .nav-link {
@@ -199,4 +201,55 @@ img {
 .smartdisplay {
   width: 100vw;
   display: block;
+}
+
+.fadeIn{
+    animation: fadeIn ease 2s ;
+    -webkit-animation:  fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn{
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes fadeIn{
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-webkit-keyframes fadeIn{
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-o-keyframes fadeIn{
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-ms-keyframes fadeIn{
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+.slideIn{
+   animation:  slide-in 0.5s forwards;
+  -webkit-animation:  slide-in 0.5s forwards;
+  -ms-animation:  slide-in 0.5s forwards;
+  -moz-animation:  slide-in 0.5s forwards;
+  -o-animation:  slide-in 0.5s forwards;
+}
+@-webkit-keyframes slide-in{
+   100% { -webkit-transform: translateX(0%);}
+}
+@-ms-keyframes slide-in{
+   100% { -ms-transform: translateX(0%);}
+}
+@-o-keyframes slide-in{
+   100% { -o-transform: translateX(0%);}
+}
+@-moz-keyframes slide-in{
+   100% { -moz-transform: translateX(0%);}
+}
+@keyframes slide-in{
+   100% { transform: translateX(0%);}
 }

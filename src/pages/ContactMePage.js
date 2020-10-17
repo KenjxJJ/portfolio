@@ -5,7 +5,7 @@ const ContactMePage = (props) => {
     <div className="mt-5 mb-5 pt-2 smartdisplay">
     <main className="content">
       <h2 className="mb-4 p-4">Have interest in my work? Get in touch with me via </h2>
-      <div className="text-center text-md-left ml-md-4">
+      <div className="text-center fadeIn text-md-left ml-md-4">
       <p><span className="smartblue font-weight-bold text-uppercase">
           Email
           </span> : {props.email}</p>

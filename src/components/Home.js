@@ -9,7 +9,7 @@ const Home = () => {
         <div className="landing_image flex-md-grow-1 order-md-2 p-4">
       <img src={JoelImg} alt="Joel Kiggwe,a Front End Developer" />
       </div>
-      <div className="landing_text flex-md-grow-1 p-3 text-md-left">
+      <div className="landing_text fadeIn flex-md-grow-1 p-3 text-md-left">
       <h1 className="cover-heading p-1">Front End Developer</h1>
       
       <p className="p-2">
