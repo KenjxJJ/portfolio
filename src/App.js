@@ -13,7 +13,7 @@ import Error404Page from "./pages/Error404Page";
 function App() {
   return (
     <>
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div className="cover-container d-flex w-100 h-100  flex-column">
         <Router>
         <Navigation />
           <Switch>
