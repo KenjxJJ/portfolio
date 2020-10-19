@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="inner">
         <h3 className="masthead-brand slideIn">Joel Kiggwe</h3>
         <nav className="nav nav-masthead justify-content-center">
-          <NavLink className="nav-link active" to="/">
+          <NavLink className="nav-link active" to="/portfolio">
             Home
           </NavLink>
           <NavLink className="nav-link" to="/projects">
