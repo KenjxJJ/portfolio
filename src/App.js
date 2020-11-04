@@ -15,7 +15,7 @@ function App() {
         <Router>
           <Navigation />
           <Switch>
-            <Route path="/portfolio" exact>
+            <Route path="/" exact>
               <Home />
             </Route>
             <Route exact path="/projects">
